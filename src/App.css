@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+/*############ Defaults ##########*/
+
+nav,
+header,
+footer {
+    display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    line-height: 1;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    font-size: 28px;
+    line-height: 1.2;
 }
 
-.App-link {
-  color: #61dafb;
+article.p {
+    font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*############ navBar ##########*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+/*######### Custom Style##########*/
+
+#section-1-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+div.slopeIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px/*H*/
+    -20px/*V*/
+    5px/*B*/
+    2px/*S*/
+    rgba(0/*SH*/
+    , 0/*BG*/
+    , 0/*BX*/
+    , .15/*OP*/
+    ), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+
+button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 5px 20px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+
+div.icon {
+    width: 100%;
+}
+
+div.leftSide-col {
+    margin-left: 30%;
+}
+
+div.rightSide-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 200px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #eee;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
